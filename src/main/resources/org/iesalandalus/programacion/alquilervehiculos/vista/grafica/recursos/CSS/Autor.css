@@ -1,0 +1,31 @@
+.fondo{
+   -fx-background-image: url('../imagenes/fondo3.jpg');
+   -fx-border-style: dashed solid;
+   -fx-border-color: rgb(13, 12, 13);
+   -fx-border-width: 10;
+   
+}
+
+.imageView{
+   -fx-border-style: dotted;
+   -fx-border-color: rgba(239, 224, 197, 0.619);
+   -fx-border-width:15;
+}
+
+.nombre{
+   -fx-text-align: center; 
+   -fx-font-family: Comic Sans MS ;
+   -fx-font-weight: bold; 
+   -fx-font-size: 40px; 
+   -fx-background-clip: text; 
+  
+}
+
+.subEtiqueta{
+   -fx-text-align: center; 
+   -fx-font-family: Comic Sans MS ;
+   -fx-font-weight: bold Italic; 
+   -fx-font-size: 25px; 
+   -fx-background-clip: text; 
+   
+}

@@ -1,0 +1,29 @@
+.nav{
+   -fx-background-color: rgb(14, 115, 216);
+   -fx-background-radius: 5;
+   -fx-border-color: green;
+   -fx-cursor: hand;
+   -fx-effect: dropshadow(one-pass-box,GREEN,8,0.0,2,0);  ;
+ 
+}
+
+.Vbox{
+    -fx-background-image: url('../imagenes/fondoPrincipal.jpg');
+   
+}
+
+#titulo{
+    -fx-text-align: center; 
+    -fx-font-family: serif;
+    -fx-font-weight: bold; 
+    -fx-font-size: 30px; 
+    -fx-background-clip: text; 
+}
+
+#subTitulos{
+     -fx-text-align: center; 
+    -fx-font-family: Comic Sans MS;
+    -fx-font-weight: bold; 
+    -fx-font-size: 23px; 
+    -fx-background-clip: text; 
+}

@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.geometry.Rectangle2D?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.effect.Blend?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.paint.RadialGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.text.Font?>
+
+<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" styleClass="fondo" stylesheets="@../CSS/Autor.css" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.iesalandalus.programacion.alquilervehiculos.vista.grafica.controladores.Autoria">
+   <children>
+      <HBox alignment="CENTER">
+         <VBox.margin>
+            <Insets bottom="10.0" top="10.0" />
+         </VBox.margin>
+         <children>
+            <Label styleClass="nombre" stylesheets="@../CSS/Autor.css" text="Irene Cañadas Pastor" textAlignment="CENTER">
+               <HBox.margin>
+                  <Insets />
+               </HBox.margin>
+               <font>
+                  <Font name="System Bold Italic" size="35.0" />
+               </font>
+               <effect>
+                  <Blend mode="GREEN" />
+               </effect>
+               <textFill>
+                  <RadialGradient centerX="0.5693832599118942" centerY="0.594696935379144" focusAngle="55.49" focusDistance="-0.4954128965325313" radius="0.5229357973151251">
+                     <stops>
+                        <Stop>
+                           <color>
+                              <Color />
+                           </color>
+                        </Stop>
+                        <Stop offset="1.0">
+                           <color>
+                              <Color red="0.9052631855010986" green="0.9052631855010986" blue="0.9052631855010986" />
+                           </color>
+                        </Stop>
+                     </stops>
+                  </RadialGradient>
+               </textFill>
+            </Label>
+         </children>
+      </HBox>
+      <HBox alignment="CENTER" prefHeight="236.0" prefWidth="563.0" styleClass="imageView" stylesheets="@../CSS/Autor.css">
+         <children>
+            <ImageView fitHeight="200.0" fitWidth="258.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../imagenes/foto.PNG" />
+               </image>
+               <HBox.margin>
+                  <Insets />
+               </HBox.margin>
+               <viewport>
+                  <Rectangle2D />
+               </viewport>
+            </ImageView>
+         </children>
+         <VBox.margin>
+            <Insets left="150.0" right="150.0" />
+         </VBox.margin></HBox>
+      <HBox alignment="CENTER">
+         <children>
+            <Label styleClass="subEtiqueta" stylesheets="@../CSS/Autor.css" text="IES Al-Andalus, 1º DAM" textFill="#130f0f" underline="true">
+               <HBox.margin>
+                  <Insets top="10.0" />
+               </HBox.margin>
+               <font>
+                  <Font name="System Bold" size="21.0" />
+               </font>
+            </Label>
+         </children>
+      </HBox>
+   </children>
+</VBox>
