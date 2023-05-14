@@ -31,6 +31,16 @@
     -fx-border-color: rgb(8, 24, 150);
 }
 
+.AnchorPane2{
+    -fx-background-color: rgb(141, 146, 227);
+    -fx-border-color: rgb(32, 145, 42);
+}
+
+.AnchorPane3{
+    -fx-background-color: rgba(212, 73, 73, 0.522);
+    -fx-border-color: rgb(255, 17, 17);
+}
+
 #tfEstilo{
     -fx-border-radius: 5;
     -fx-border-width: 2;
@@ -78,4 +88,9 @@ Button:default {
 
 Button:default:hover {
     -fx-background-color: derive(-fx-focus-color,30%);
+}
+
+.ListView{
+    -fx-background-color: rgb(166, 210, 228);
+    -fx-border-color: rgb(140, 14, 14);
 }

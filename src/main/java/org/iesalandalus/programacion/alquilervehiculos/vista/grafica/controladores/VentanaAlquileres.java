@@ -50,7 +50,7 @@ public class VentanaAlquileres extends Controlador {
 		cbAlquileres.setValue(INSERTAR);
 		cbAlquileres.setItems(cbListaAlquileres);
 	}
-	
+
 	@FXML
 	private void escogerOpcion(MouseEvent event) {
 		String opcion = cbAlquileres.getSelectionModel().getSelectedItem();
@@ -74,17 +74,23 @@ public class VentanaAlquileres extends Controlador {
 			break;
 
 		case DEVOLVER_ALQUILER_CLIENTE:
-			Controlador ventanaDevolverAlquilerCliente = Controladores.get("vistas/DevolverAlquilerCliente.fxml", TITULO3, null);
-			ventanaDevolverAlquilerCliente.getEscenario().setOnCloseRequest(e -> confirmarSalida(ventanaDevolverAlquilerCliente.getEscenario(), e));
-			Image iconoDevolverAlquilerCliente  = new Image(LocalizadorRecursos.class.getResourceAsStream("imagenes/iconoDevolverAlquiler.png"));
+			Controlador ventanaDevolverAlquilerCliente = Controladores.get("vistas/DevolverAlquilerCliente.fxml",
+					TITULO3, null);
+			ventanaDevolverAlquilerCliente.getEscenario()
+					.setOnCloseRequest(e -> confirmarSalida(ventanaDevolverAlquilerCliente.getEscenario(), e));
+			Image iconoDevolverAlquilerCliente = new Image(
+					LocalizadorRecursos.class.getResourceAsStream("imagenes/iconoDevolverAlquiler.png"));
 			ventanaDevolverAlquilerCliente.getEscenario().getIcons().add(iconoDevolverAlquilerCliente);
 			ventanaDevolverAlquilerCliente.getEscenario().showAndWait();
 			break;
 
 		case DEVOLVER_ALQUILER_VEHICULO:
-			Controlador ventanaDevolverAlquilerVehiculo = Controladores.get("vistas/DevolverAlquilerVehiculo.fxml", TITULO4, null);
-			ventanaDevolverAlquilerVehiculo.getEscenario().setOnCloseRequest(e -> confirmarSalida(ventanaDevolverAlquilerVehiculo.getEscenario(), e));
-			Image iconoDevolverAlquilerVehiculo = new Image(LocalizadorRecursos.class.getResourceAsStream("imagenes/iconoDevolverAlquiler.png"));
+			Controlador ventanaDevolverAlquilerVehiculo = Controladores.get("vistas/DevolverAlquilerVehiculo.fxml",
+					TITULO4, null);
+			ventanaDevolverAlquilerVehiculo.getEscenario()
+					.setOnCloseRequest(e -> confirmarSalida(ventanaDevolverAlquilerVehiculo.getEscenario(), e));
+			Image iconoDevolverAlquilerVehiculo = new Image(
+					LocalizadorRecursos.class.getResourceAsStream("imagenes/iconoDevolverAlquiler.png"));
 			ventanaDevolverAlquilerVehiculo.getEscenario().getIcons().add(iconoDevolverAlquilerVehiculo);
 			ventanaDevolverAlquilerVehiculo.getEscenario().showAndWait();
 			break;
@@ -106,17 +112,23 @@ public class VentanaAlquileres extends Controlador {
 			break;
 
 		case LISTAR_ALQUILER_CLIENTE:
-			Controlador ventanaListarAlquilerCliente = Controladores.get("vistas/ListarAlquilerCliente.fxml", TITULO7, null);
-			ventanaListarAlquilerCliente.getEscenario().setOnCloseRequest(e -> confirmarSalida(ventanaListarAlquilerCliente.getEscenario(), e));
-			Image iconoListarAlquilerCliente = new Image(LocalizadorRecursos.class.getResourceAsStream("imagenes/iconoListar.png"));
+			Controlador ventanaListarAlquilerCliente = Controladores.get("vistas/ListarAlquilerCliente.fxml", TITULO7,
+					null);
+			ventanaListarAlquilerCliente.getEscenario()
+					.setOnCloseRequest(e -> confirmarSalida(ventanaListarAlquilerCliente.getEscenario(), e));
+			Image iconoListarAlquilerCliente = new Image(
+					LocalizadorRecursos.class.getResourceAsStream("imagenes/iconoListar.png"));
 			ventanaListarAlquilerCliente.getEscenario().getIcons().add(iconoListarAlquilerCliente);
 			ventanaListarAlquilerCliente.getEscenario().showAndWait();
 			break;
 
 		case LISTAR_ALQUILER_VEHICULO:
-			Controlador ventanaListarAlquilerVehiculo = Controladores.get("vistas/ListarAlquilerVehiculo.fxml", TITULO8, null);
-			ventanaListarAlquilerVehiculo.getEscenario().setOnCloseRequest(e -> confirmarSalida(ventanaListarAlquilerVehiculo.getEscenario(), e));
-			Image iconoListarAlquilerVehiculo = new Image(LocalizadorRecursos.class.getResourceAsStream("imagenes/iconoListar.png"));
+			Controlador ventanaListarAlquilerVehiculo = Controladores.get("vistas/ListarAlquilerVehiculo.fxml", TITULO8,
+					null);
+			ventanaListarAlquilerVehiculo.getEscenario()
+					.setOnCloseRequest(e -> confirmarSalida(ventanaListarAlquilerVehiculo.getEscenario(), e));
+			Image iconoListarAlquilerVehiculo = new Image(
+					LocalizadorRecursos.class.getResourceAsStream("imagenes/iconoListar.png"));
 			ventanaListarAlquilerVehiculo.getEscenario().getIcons().add(iconoListarAlquilerVehiculo);
 			ventanaListarAlquilerVehiculo.getEscenario().showAndWait();
 			break;
