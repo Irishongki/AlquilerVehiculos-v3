@@ -1,0 +1,17 @@
+.Hbox{
+    -fx-background-image: url('../imagenes/fondoAlquileres2.jpg');
+    -fx-background-size: 100%;
+}
+
+#titulo{
+    -fx-text-align: center; 
+    -fx-font-family: serif;
+    -fx-font-weight: bold; 
+    -fx-font-size: 30px; 
+    -fx-background-clip: text; 
+}
+
+#box{
+    -fx-background-color: rgb(254, 222, 109);
+    -fx-border-color: rgb(208, 3, 154);
+}

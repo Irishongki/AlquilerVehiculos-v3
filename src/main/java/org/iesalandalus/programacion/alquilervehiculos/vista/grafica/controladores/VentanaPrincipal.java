@@ -16,6 +16,9 @@ import javafx.stage.WindowEvent;
 public class VentanaPrincipal extends Controlador {
 
 	private static final String TITULO = "Información sobre el Autor de la Aplicación";
+	private static final String TITULO2 = "Opciones para los Clientes";
+	private static final String TITULO3 = "Opciones para los Vehículos";
+	private static final String TITULO4 = "Opciones para los Alquileres";
 
 	@FXML
 	private Button btPulsame;
@@ -32,18 +35,43 @@ public class VentanaPrincipal extends Controlador {
     }
 
     @FXML
+    void crearCliente(ActionEvent event) {
+    	Controlador ventanaInsertar = Controladores.get("vistas/InsertarCliente.fxml", "Insertar un Cliente", null);
+		ventanaInsertar.getEscenario().setOnCloseRequest(e -> confirmarSalida(ventanaInsertar.getEscenario(), e));
+		Image iconoInsertar = new Image(
+				LocalizadorRecursos.class.getResourceAsStream("imagenes/iconoInsertarCliente.png"));
+		ventanaInsertar.getEscenario().getIcons().add(iconoInsertar);
+		ventanaInsertar.getEscenario().showAndWait();
+    }
+    
+    @FXML
     void abrirAlquileres(MouseEvent event) {
     	System.out.println("Ventana de los Alquileres");
+    	Controlador ventanaAlquileres = Controladores.get("vistas/VentanaAlquileres.fxml", TITULO4, null);
+    	ventanaAlquileres.getEscenario().setOnCloseRequest(e -> confirmarSalida(ventanaAlquileres.getEscenario(), e));
+    	Image iconoAlquileres = new Image(LocalizadorRecursos.class.getResourceAsStream("imagenes/alquiler.png"));
+		ventanaAlquileres.getEscenario().getIcons().add(iconoAlquileres);
+    	ventanaAlquileres.getEscenario().showAndWait();
     }
 
     @FXML
     void abrirClientes(MouseEvent event) {
     	System.out.println("Ventana de los Clientes");
+    	Controlador ventanaClientes = Controladores.get("vistas/VentanaClientes.fxml", TITULO2, null);
+    	ventanaClientes.getEscenario().setOnCloseRequest(e -> confirmarSalida(ventanaClientes.getEscenario(), e));
+    	Image iconoClientes = new Image(LocalizadorRecursos.class.getResourceAsStream("imagenes/clientes.png"));
+		ventanaClientes.getEscenario().getIcons().add(iconoClientes);
+    	ventanaClientes.getEscenario().showAndWait();
     }
 
     @FXML
     void abrirVehiculos(MouseEvent event) {
-    	System.out.println("Ventana de los Vehiculos");
+    	System.out.println("Ventana de los Vehículos");
+    	Controlador ventanaVehiculos = Controladores.get("vistas/VentanaVehiculos.fxml", TITULO3, null);
+    	ventanaVehiculos.getEscenario().setOnCloseRequest(e -> confirmarSalida(ventanaVehiculos.getEscenario(), e));
+    	Image iconoVehiculos = new Image(LocalizadorRecursos.class.getResourceAsStream("imagenes/vehiculos.png"));
+		ventanaVehiculos.getEscenario().getIcons().add(iconoVehiculos);
+    	ventanaVehiculos.getEscenario().showAndWait();
     }
 
 	@FXML
