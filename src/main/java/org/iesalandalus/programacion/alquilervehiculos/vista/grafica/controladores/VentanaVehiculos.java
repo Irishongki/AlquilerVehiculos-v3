@@ -72,10 +72,11 @@ public class VentanaVehiculos extends Controlador {
 			break;
 
 		case LISTAR:
-			Controlador ventanaListar = Controladores.get("vistas/ListarVehiculo.fxml", TITULO4, null);
+			ListarVehiculo ventanaListar = (ListarVehiculo) Controladores.get("vistas/ListarVehiculo.fxml", TITULO4, null);
 			ventanaListar.getEscenario().setOnCloseRequest(e -> confirmarSalida(ventanaListar.getEscenario(), e));
 			Image iconoListar = new Image(LocalizadorRecursos.class.getResourceAsStream("imagenes/iconoListar.png"));
 			ventanaListar.getEscenario().getIcons().add(iconoListar);
+			ventanaListar.refrescar();
 			ventanaListar.getEscenario().showAndWait();
 			break;
 

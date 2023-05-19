@@ -1,6 +1,36 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
 
 
-<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="400.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.iesalandalus.programacion.alquilervehiculos.vista.grafica.controladores.BorrarAlquiler" />
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="257.0" prefWidth="600.0" style="-fx-background-color: #669; -fx-border-color: black;" stylesheets="@../CSS/VentanaAlquileres.css" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.iesalandalus.programacion.alquilervehiculos.vista.grafica.controladores.BorrarAlquiler">
+   <children>
+      <Label id="titulo2" layoutX="41.0" layoutY="32.0" stylesheets="@../CSS/VentanaClientes.css" text="Dime el Dni:" />
+      <TextField id="tfEstilo" fx:id="tfDni" layoutX="196.0" layoutY="35.0" prefHeight="26.0" prefWidth="145.0" stylesheets="@../CSS/VentanaClientes.css" />
+      <Label id="titulo2" layoutX="41.0" layoutY="92.0" stylesheets="@../CSS/VentanaClientes.css" text="Dime la matricula del Vehiculo:" />
+      <TextField fx:id="tfMatricula" layoutX="397.0" layoutY="93.0" prefHeight="26.0" prefWidth="152.0" />
+      <Label id="titulo2" layoutX="41.0" layoutY="152.0" stylesheets="@../CSS/VentanaClientes.css" text="Dime la fecha de Alquiler:">
+         <font>
+            <Font size="22.0" />
+         </font>
+      </Label>
+      <DatePicker fx:id="dpFechaAlquiler" layoutX="342.0" layoutY="154.0" stylesheets="@../CSS/VentanaAlquileres.css" />
+      <ImageView fitHeight="49.0" fitWidth="45.0" layoutX="224.0" layoutY="198.0" onMouseClicked="#borrarAlquiler" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../imagenes/iconoBorrar.png" />
+         </image>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </ImageView>
+      <Button layoutX="300.0" layoutY="203.0" mnemonicParsing="false" onMouseClicked="#limpiar" text="Clean" />
+   </children>
+</AnchorPane>

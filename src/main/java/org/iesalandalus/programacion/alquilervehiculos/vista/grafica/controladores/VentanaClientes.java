@@ -83,11 +83,12 @@ public class VentanaClientes extends Controlador {
 			break;
 
 		case LISTAR:
-			Controlador ventanaListar = Controladores.get("vistas/ListarCliente.fxml", TITULO5, null);
+			ListarCliente ventanaListar = (ListarCliente)Controladores.get("vistas/ListarCliente.fxml", TITULO5, null);
 			ventanaListar.getEscenario().setOnCloseRequest(e -> confirmarSalida(ventanaListar.getEscenario(), e));
 			Image iconoListar = new Image(LocalizadorRecursos.class.getResourceAsStream("imagenes/iconoListar.png"));
 			ventanaListar.getEscenario().getIcons().add(iconoListar);
-			ventanaListar.getEscenario().showAndWait();
+			ventanaListar.refrescar();
+			ventanaListar.getEscenario().showAndWait(); 
 			break;
 
 		}

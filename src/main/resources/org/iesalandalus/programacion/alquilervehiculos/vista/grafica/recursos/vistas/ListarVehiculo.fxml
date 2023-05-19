@@ -1,6 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
 
-
-<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="400.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.iesalandalus.programacion.alquilervehiculos.vista.grafica.controladores.ListarVehiculo" />
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="414.0" prefWidth="802.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.iesalandalus.programacion.alquilervehiculos.vista.grafica.controladores.ListarVehiculo">
+   <children>
+      <TableView fx:id="tablaVehiculos" prefHeight="414.0" prefWidth="802.0" style="-fx-base: blue;" styleClass="TableView" stylesheets="@../CSS/VentanaClientes.css">
+         <columns>
+            <TableColumn fx:id="marcaItem" prefWidth="132.00003051757812" text="Marca" />
+            <TableColumn fx:id="matriculaItem" minWidth="0.0" prefWidth="119.20001220703125" text="Matricula" />
+            <TableColumn fx:id="modeloItem" minWidth="0.0" prefWidth="135.20001220703125" text="Modelo" />
+            <TableColumn fx:id="tipoItem" prefWidth="102.39996337890625" text="tipo" />
+            <TableColumn fx:id="pmaItem" prefWidth="85.60009765625" text="Pma" />
+            <TableColumn fx:id="cilindradaItem" prefWidth="115.20001220703125" text="Cilindrada" />
+            <TableColumn fx:id="plazasItem" prefWidth="106.39999999999998" text="Plazas" />
+         </columns>
+      </TableView>
+   </children>
+</AnchorPane>

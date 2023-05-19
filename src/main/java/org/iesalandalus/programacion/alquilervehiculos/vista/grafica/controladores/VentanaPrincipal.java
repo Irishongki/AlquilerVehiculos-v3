@@ -43,7 +43,56 @@ public class VentanaPrincipal extends Controlador {
 		ventanaInsertar.getEscenario().getIcons().add(iconoInsertar);
 		ventanaInsertar.getEscenario().showAndWait();
 	}
+	
+    @FXML
+    void crearVehiculo(ActionEvent event) {
+    	Controlador ventanaInsertar = Controladores.get("vistas/InsertarVehiculo.fxml", "Insertar un Vehiculo", null);
+		ventanaInsertar.getEscenario().setOnCloseRequest(e -> confirmarSalida(ventanaInsertar.getEscenario(), e));
+		Image iconoInsertar = new Image(
+				LocalizadorRecursos.class.getResourceAsStream("imagenes/iconoInsertarVehiculo.png"));
+		ventanaInsertar.getEscenario().getIcons().add(iconoInsertar);
+		ventanaInsertar.getEscenario().showAndWait();
+    }
+    
+    @FXML
+    void crearAlquiler(ActionEvent event) {
+    	Controlador ventanaInsertar = Controladores.get("vistas/InsertarAlquiler.fxml", "Insertar un Alquiler", null);
+		ventanaInsertar.getEscenario().setOnCloseRequest(e -> confirmarSalida(ventanaInsertar.getEscenario(), e));
+		Image iconoInsertar = new Image(
+				LocalizadorRecursos.class.getResourceAsStream("imagenes/iconoInsertarAlquiler.png"));
+		ventanaInsertar.getEscenario().getIcons().add(iconoInsertar);
+		ventanaInsertar.getEscenario().showAndWait();
+    }
+    
+    @FXML
+    void borrarCliente(ActionEvent event) {
+    	Controlador ventanaBorrar = Controladores.get("vistas/BorrarCliente.fxml", "Borrar un Cliente", null);
+		ventanaBorrar.getEscenario().setOnCloseRequest(e -> confirmarSalida(ventanaBorrar.getEscenario(), e));
+		Image iconoBorrar = new Image(
+				LocalizadorRecursos.class.getResourceAsStream("imagenes/iconoBorrar.png"));
+		ventanaBorrar.getEscenario().getIcons().add(iconoBorrar);
+		ventanaBorrar.getEscenario().showAndWait();
+    } 
 
+    @FXML
+    void borrarVehiculo(ActionEvent event) {
+    	Controlador ventanaBorrar = Controladores.get("vistas/BorrarVehiculo.fxml", "Borrar un Vehiculo", null);
+		ventanaBorrar.getEscenario().setOnCloseRequest(e -> confirmarSalida(ventanaBorrar.getEscenario(), e));
+		Image iconoBorrar = new Image(
+				LocalizadorRecursos.class.getResourceAsStream("imagenes/iconoBorrar.png"));
+		ventanaBorrar.getEscenario().getIcons().add(iconoBorrar);
+		ventanaBorrar.getEscenario().showAndWait();
+    }
+    
+    @FXML
+    void borrarAlquiler(ActionEvent event) {
+    	Controlador ventanaBorrar = Controladores.get("vistas/BorrarAlquiler.fxml", "Borrar un Alquiler", null);
+		ventanaBorrar.getEscenario().setOnCloseRequest(e -> confirmarSalida(ventanaBorrar.getEscenario(), e));
+		Image iconoBorrar = new Image(LocalizadorRecursos.class.getResourceAsStream("imagenes/iconoBorrar.png"));
+		ventanaBorrar.getEscenario().getIcons().add(iconoBorrar);
+		ventanaBorrar.getEscenario().showAndWait();
+    }
+    
 	@FXML
 	void abrirAlquileres(MouseEvent event) {
 		System.out.println("Ventana de los Alquileres");

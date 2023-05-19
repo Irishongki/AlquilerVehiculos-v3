@@ -1,6 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
 
-
-<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="400.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.iesalandalus.programacion.alquilervehiculos.vista.grafica.controladores.ListarCliente" />
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="408.0" prefWidth="632.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.iesalandalus.programacion.alquilervehiculos.vista.grafica.controladores.ListarCliente">
+   <children>
+      <TableView fx:id="tablaClientes" prefHeight="408.0" prefWidth="632.0" style="-fx-base: rgba(255, 0, 0, 0.562);" styleClass="TableView" stylesheets="@../CSS/VentanaClientes.css" tableMenuButtonVisible="true">
+        <columns>
+          <TableColumn fx:id="nombreItem" prefWidth="222.4000244140625" text="Nombre" />
+          <TableColumn fx:id="dniItem" minWidth="0.0" prefWidth="187.20001220703125" text="DNI" />
+            <TableColumn fx:id="telefonoItem" prefWidth="223.99990844726562" text="Telefono" />
+        </columns>
+      </TableView>
+   </children>
+</AnchorPane>

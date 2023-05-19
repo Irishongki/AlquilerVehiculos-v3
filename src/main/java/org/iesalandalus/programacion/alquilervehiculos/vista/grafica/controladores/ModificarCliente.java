@@ -54,6 +54,7 @@ public class ModificarCliente extends Controlador {
 			String telefono = tfTelefono.getText();
 			Cliente cliente = VistaGrafica.getInstancia().getControlador().buscar(Cliente.getClienteConDni(dniBuscado));
 			VistaGrafica.getInstancia().getControlador().modificar(cliente, nombre, telefono);
+			Dialogos.mostrarDialogoInformacion("Datos Modificados", "Los datos se han modificado correctamente.", null);
 		} catch (Exception e) {
 			Dialogos.mostrarDialogoError("ERROR: Ha ocurrido una Exceptión", e.getMessage(), null);
 		}

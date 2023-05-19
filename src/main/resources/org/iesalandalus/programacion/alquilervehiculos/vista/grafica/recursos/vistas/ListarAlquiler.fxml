@@ -1,6 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
 
 
-<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="400.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.iesalandalus.programacion.alquilervehiculos.vista.grafica.controladores.ListarAlquiler" />
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="370.0" prefWidth="802.0" stylesheets="@../CSS/VentanaAlquileres.css" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.iesalandalus.programacion.alquilervehiculos.vista.grafica.controladores.ListarAlquiler">
+   <children>
+      <TableView fx:id="tvAlquiler" layoutX="-3.0" layoutY="1.0" prefHeight="370.0" prefWidth="808.0" style="-fx-base: orange;" stylesheets="@../CSS/VentanaAlquileres.css" tableMenuButtonVisible="true">
+        <columns>
+          <TableColumn fx:id="clienteItem" prefWidth="253.59993886947632" text="Cliente" />
+          <TableColumn fx:id="vehiculoItem" prefWidth="278.4000549316406" text="Vehiculo" />
+            <TableColumn fx:id="fechaAlquilerItem" prefWidth="128.79998779296875" text="Fecha de Alquiler" />
+            <TableColumn fx:id="fechaDevolucionItem" prefWidth="136.7999267578125" text="Fecha de devolución" />
+        </columns>
+      </TableView>
+   </children>
+</AnchorPane>

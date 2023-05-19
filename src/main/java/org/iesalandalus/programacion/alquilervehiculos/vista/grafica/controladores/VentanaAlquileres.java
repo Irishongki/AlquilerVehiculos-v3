@@ -55,7 +55,6 @@ public class VentanaAlquileres extends Controlador {
 	private void escogerOpcion(MouseEvent event) {
 		String opcion = cbAlquileres.getSelectionModel().getSelectedItem();
 		switch (opcion) {
-
 		case INSERTAR:
 			Controlador ventanaInsertar = Controladores.get("vistas/InsertarAlquiler.fxml", TITULO, null);
 			ventanaInsertar.getEscenario().setOnCloseRequest(e -> confirmarSalida(ventanaInsertar.getEscenario(), e));
@@ -104,10 +103,11 @@ public class VentanaAlquileres extends Controlador {
 			break;
 
 		case LISTAR:
-			Controlador ventanaListar = Controladores.get("vistas/ListarAlquiler.fxml", TITULO6, null);
+			ListarAlquiler ventanaListar = (ListarAlquiler) Controladores.get("vistas/ListarAlquiler.fxml", TITULO6, null);
 			ventanaListar.getEscenario().setOnCloseRequest(e -> confirmarSalida(ventanaListar.getEscenario(), e));
 			Image iconoListar = new Image(LocalizadorRecursos.class.getResourceAsStream("imagenes/iconoListar.png"));
 			ventanaListar.getEscenario().getIcons().add(iconoListar);
+			ventanaListar.refrescar();
 			ventanaListar.getEscenario().showAndWait();
 			break;
 

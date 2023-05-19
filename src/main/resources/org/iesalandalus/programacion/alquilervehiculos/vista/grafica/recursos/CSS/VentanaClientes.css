@@ -41,6 +41,15 @@
     -fx-border-color: rgb(255, 17, 17);
 }
 
+.TableView{
+    -fx-border-color: rgb(12, 8, 207);
+    
+}
+
+.TableView .column-header .label{
+    -fx-text-fill: rgb(1, 0, 1);
+}
+
 #tfEstilo{
     -fx-border-radius: 5;
     -fx-border-width: 2;
@@ -94,3 +103,4 @@ Button:default:hover {
     -fx-background-color: rgb(166, 210, 228);
     -fx-border-color: rgb(140, 14, 14);
 }
+

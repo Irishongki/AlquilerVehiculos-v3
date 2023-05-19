@@ -21,15 +21,15 @@
                   <Menu mnemonicParsing="false" text="Crear">
                      <items>
                         <MenuItem mnemonicParsing="false" onAction="#crearCliente" text="Cliente" />
-                        <MenuItem mnemonicParsing="false" text="Vehiculo" />
-                        <MenuItem mnemonicParsing="false" text="Alquiler" />
+                        <MenuItem mnemonicParsing="false" onAction="#crearVehiculo" text="Vehiculo" />
+                        <MenuItem mnemonicParsing="false" onAction="#crearAlquiler" text="Alquiler" />
                      </items>
                   </Menu>
                   <Menu mnemonicParsing="false" text="Borrar">
                      <items>
-                        <MenuItem mnemonicParsing="false" text="Cliente" />
-                        <MenuItem mnemonicParsing="false" text="Vehiculo" />
-                        <MenuItem mnemonicParsing="false" text="Alquiler" />
+                        <MenuItem mnemonicParsing="false" onAction="#borrarCliente" text="Cliente" />
+                        <MenuItem mnemonicParsing="false" onAction="#borrarVehiculo" text="Vehiculo" />
+                        <MenuItem mnemonicParsing="false" onAction="#borrarAlquiler" text="Alquiler" />
                      </items>
                   </Menu>
                   <SeparatorMenuItem mnemonicParsing="false" />

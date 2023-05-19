@@ -24,7 +24,7 @@
                   <Glow level="0.77" />
                </effect>
             </Label>
-            <Button fx:id="btOpcion" layoutX="214.0" layoutY="395.0" mnemonicParsing="false" onMouseClicked="#escogerOpcion" prefHeight="27.0" prefWidth="82.0" text="Aceptar" />
+            <Button fx:id="btOpcion" layoutX="193.0" layoutY="394.0" mnemonicParsing="false" onMouseClicked="#escogerOpcion" prefHeight="36.0" prefWidth="105.0" text="Aceptar" />
          </children>
       </AnchorPane>
    </children>

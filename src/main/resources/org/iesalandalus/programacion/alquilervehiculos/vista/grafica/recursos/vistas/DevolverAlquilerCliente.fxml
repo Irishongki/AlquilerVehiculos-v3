@@ -1,6 +1,24 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
 
 
-<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="400.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.iesalandalus.programacion.alquilervehiculos.vista.grafica.controladores.DevolverAlquilerCliente" />
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="247.0" prefWidth="570.0" styleClass="ListView" stylesheets="@../CSS/VentanaAlquileres.css" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.iesalandalus.programacion.alquilervehiculos.vista.grafica.controladores.DevolverAlquilerCliente">
+   <children>
+      <Label id="titulo2" layoutX="193.0" layoutY="22.0" stylesheets="@../CSS/VentanaClientes.css" text="Introduce el Dni:" />
+      <TextField id="tfEstilo" fx:id="tfDni" layoutX="212.0" layoutY="63.0" prefHeight="26.0" prefWidth="145.0" stylesheets="@../CSS/VentanaClientes.css" />
+      <Label id="titulo2" layoutX="117.0" layoutY="109.0" stylesheets="@../CSS/VentanaClientes.css" text="Introduce la fecha de devolución:">
+         <font>
+            <Font size="22.0" />
+         </font>
+      </Label>
+      <DatePicker fx:id="dpFechaDevolucion" layoutX="197.0" layoutY="149.0" stylesheets="@../CSS/VentanaAlquileres.css" />
+      <Button layoutX="163.0" layoutY="189.0" mnemonicParsing="false" onMouseClicked="#devolverAlquilerCliente" text="Aceptar" />
+      <Button layoutX="285.0" layoutY="189.0" mnemonicParsing="false" onMouseClicked="#limpiar" text="Limpiar" />
+   </children>
+</AnchorPane>

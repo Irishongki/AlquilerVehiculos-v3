@@ -1,6 +1,27 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
 
-
-<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="400.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.iesalandalus.programacion.alquilervehiculos.vista.grafica.controladores.BuscarVehiculo" />
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="190.0" prefWidth="602.0" styleClass="AncherPane" stylesheets="@../CSS/VentanaVehiculos.css" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.iesalandalus.programacion.alquilervehiculos.vista.grafica.controladores.BuscarVehiculo">
+   <children>
+      <Label id="titulo2" layoutX="14.0" layoutY="31.0" prefWidth="267.0" stylesheets="@../CSS/VentanaClientes.css" text="Introduce la Matricula:" />
+      <TextField id="tfEstilo" fx:id="tfMatricula" layoutX="277.0" layoutY="32.0" prefHeight="26.0" prefWidth="145.0" stylesheets="@../CSS/VentanaClientes.css" />
+      <ImageView fitHeight="26.0" fitWidth="26.0" layoutX="438.0" layoutY="32.0" onMouseClicked="#buscarVehiculo" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../imagenes/iconoBuscar.png" />
+         </image>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </ImageView>
+      <Button layoutX="480.0" layoutY="28.0" mnemonicParsing="false" onAction="#limpiar" prefHeight="36.0" prefWidth="88.0" text="Clean" />
+      <ListView fx:id="lvVehiculo" layoutX="23.0" layoutY="94.0" prefHeight="74.0" prefWidth="545.0" styleClass="ListView" stylesheets="@../CSS/VentanaClientes.css" />
+   </children>
+</AnchorPane>
