@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <alquileres>
-    <alquiler cliente="11111111H" fechaAlquiler="16/05/2023" fechaDevolucion="19/05/2023" vehiculo="1234BCD"/>
     <alquiler cliente="11223344B" fechaAlquiler="11/05/2023" fechaDevolucion="13/05/2023" vehiculo="5678CFD"/>
     <alquiler cliente="99999999R" fechaAlquiler="15/05/2023" fechaDevolucion="17/05/2023" vehiculo="5678CFD"/>
+    <alquiler cliente="99999999R" fechaAlquiler="18/05/2023" fechaDevolucion="19/05/2023" vehiculo="0928JKL"/>
+    <alquiler cliente="77245236N" fechaAlquiler="17/05/2023" vehiculo="8907CDS"/>
 </alquileres>

@@ -21,9 +21,9 @@ public class MainApp {
 	private static Vista procesarArgumentos(String[] argumentos) {
 		Vista vista = FactoriaVista.GRAFICA.crear();
 		for (String argumento : argumentos) {
-			if (argumento.equals("-vTexto")) {
+			if (argumento.equals("-vtexto")) {
 				vista = FactoriaVista.TEXTO.crear();
-			}else if(argumento.equals("-vGrafica")) {
+			}else if(argumento.equals("-vgrafica")) {
 				vista = FactoriaVista.GRAFICA.crear();
 			}
 		}

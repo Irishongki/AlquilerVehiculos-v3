@@ -1,6 +1,25 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
 
-
-<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="400.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.iesalandalus.programacion.alquilervehiculos.vista.grafica.controladores.ListarAlquilerCliente" />
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="852.0" styleClass="AncherPane3" stylesheets="@../CSS/VentanaAlquileres.css" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.iesalandalus.programacion.alquilervehiculos.vista.grafica.controladores.ListarAlquilerCliente">
+   <children>
+      <TableView fx:id="tvAlquiler" layoutX="31.0" layoutY="110.0" prefHeight="247.0" prefWidth="806.0" style="-fx-base: lime;" stylesheets="@../CSS/VentanaAlquileres.css" tableMenuButtonVisible="true">
+         <columns>
+            <TableColumn fx:id="clienteItem" prefWidth="253.59993886947632" text="Cliente" />
+            <TableColumn fx:id="vehiculoItem" prefWidth="278.4000549316406" text="Vehiculo" />
+            <TableColumn fx:id="fechaAlquilerItem" prefWidth="128.79998779296875" text="Fecha de Alquiler" />
+            <TableColumn fx:id="fechaDevolucionItem" prefWidth="136.7999267578125" text="Fecha de devolución" />
+         </columns>
+      </TableView>
+      <Label id="titulo" layoutX="31.0" layoutY="44.0" stylesheets="@../CSS/VentanaAlquileres.css" text="Dime el Dni del Cliente:" />
+      <TextField fx:id="tfdni" layoutX="303.0" layoutY="46.0" prefHeight="26.0" prefWidth="211.0" />
+      <Button layoutX="553.0" layoutY="41.0" mnemonicParsing="false" onMouseClicked="#listarAlquileresCliente" text="Aceptar" />
+      <Button layoutX="686.0" layoutY="41.0" mnemonicParsing="false" onMouseClicked="#limpiar" text="Limpiar" />
+   </children>
+</AnchorPane>

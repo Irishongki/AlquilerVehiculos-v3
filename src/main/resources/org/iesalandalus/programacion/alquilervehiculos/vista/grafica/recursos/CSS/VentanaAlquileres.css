@@ -26,6 +26,22 @@
     -fx-border-color: rgb(102, 27, 199);
 }
 
+.AncherPane3{
+    -fx-background-color: rgba(141, 227, 126, 0.86);
+}
+
+.AncherPane4{
+    -fx-background-color: rgba(222, 94, 94, 0.86);
+}
+
+#titulo{
+    -fx-text-align: center; 
+    -fx-font-family: serif;
+    -fx-font-weight: bold; 
+    -fx-font-size: 25px; 
+    -fx-background-clip: text; 
+}
+
 
 Button {
     -fx-padding: 5 22 5 22;

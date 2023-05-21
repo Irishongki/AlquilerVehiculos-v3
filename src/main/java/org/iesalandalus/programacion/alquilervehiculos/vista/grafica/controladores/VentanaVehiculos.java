@@ -21,13 +21,15 @@ public class VentanaVehiculos extends Controlador {
 	private static final String TITULO2 = "Buscar un Vehículo";
 	private static final String TITULO3 = "Borrar un Vehículo";
 	private static final String TITULO4 = "Listar los Vehículos";
+	private static final String TITULO5 = "Devolver el Alquiler de un Vehiculo";
 
 	private static final String INSERTAR = "Insertar";
 	private static final String BUSCAR = "Buscar";
 	private static final String BORRAR = "Borrar";
 	private static final String LISTAR = "Listar";
+	private static final String DEVOLVER_ALQUILER_VEHICULO = "Devolver el Alquiler de un Vehículo";
 
-	ObservableList<String> cbListaVehiculos = FXCollections.observableArrayList(INSERTAR, BUSCAR, BORRAR, LISTAR);
+	ObservableList<String> cbListaVehiculos = FXCollections.observableArrayList(INSERTAR, BUSCAR, BORRAR, LISTAR, DEVOLVER_ALQUILER_VEHICULO);
 
 	@FXML
 	private Button btOpcion;
@@ -79,7 +81,17 @@ public class VentanaVehiculos extends Controlador {
 			ventanaListar.refrescar();
 			ventanaListar.getEscenario().showAndWait();
 			break;
-
+			
+		case DEVOLVER_ALQUILER_VEHICULO:
+			Controlador ventanaDevolverAlquilerVehiculo = Controladores.get("vistas/DevolverAlquilerVehiculo.fxml",
+					TITULO5, null);
+			ventanaDevolverAlquilerVehiculo.getEscenario()
+					.setOnCloseRequest(e -> confirmarSalida(ventanaDevolverAlquilerVehiculo.getEscenario(), e));
+			Image iconoDevolverAlquilerVehiculo = new Image(
+					LocalizadorRecursos.class.getResourceAsStream("imagenes/iconoDevolverAlquiler.png"));
+			ventanaDevolverAlquilerVehiculo.getEscenario().getIcons().add(iconoDevolverAlquilerVehiculo);
+			ventanaDevolverAlquilerVehiculo.getEscenario().showAndWait();
+			break;
 		}
 	}
 

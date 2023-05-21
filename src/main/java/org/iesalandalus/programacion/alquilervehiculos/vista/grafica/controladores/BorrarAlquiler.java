@@ -31,6 +31,7 @@ public class BorrarAlquiler extends Controlador{
 			} catch (Exception e) {
 				Dialogos.mostrarDialogoError("ERROR: Ha ocurrido una Exceptión", e.getMessage(), null);
 			}
+	    	 getEscenario().close();
 	    }
 
 	    @FXML
